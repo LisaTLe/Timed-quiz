@@ -1,0 +1,70 @@
+:root {
+  --background: rgb(151, 208, 255);
+  --tan: rgb(191, 174, 151);
+  --text: black;
+  --text2: rgb(121, 152, 236);
+  --cream: rgb(226, 218, 207);
+  --light: rgb(253, 237, 237);
+  --select: red;
+}
+
+* {
+  margin: 1;
+  padding: 1;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background: var(--background);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: var(--text);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  color: var(--text);
+  font-family: "Courier New", Courier, monospace;
+}
+
+a:hover {
+  color: var(--select);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn:focus,
+.btn:active,
+.btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #343a40;
+}
+
+#finalScore {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+span {
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#questionTitle {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#answerCheck {
+  font-style: italic;
+  color: #4d5159;
+}
