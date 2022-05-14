@@ -2,9 +2,8 @@
   --background: rgb(151, 208, 255);
   --tan: rgb(191, 174, 151);
   --text: black;
-  --text2: rgb(121, 152, 236);
+  --text2: rgb(8, 8, 201);
   --cream: rgb(226, 218, 207);
-  --light: rgb(253, 237, 237);
   --select: red;
 }
 
@@ -22,10 +21,14 @@ body {
   text-align: center;
 }
 
-h1,
-h2 {
+h1 {
   color: var(--text);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: cursive;
+}
+
+h2 {
+  font-family: cursive;
+  color: var(--text2);
 }
 
 a {
@@ -38,17 +41,15 @@ a:hover {
   font-family: "Courier New", Courier, monospace;
 }
 
-.btn:focus,
-.btn:active,
-.btn:visited {
-  outline: none !important;
-  box-shadow: none !important;
-  background-color: #343a40;
+hr {
+  border: solid 5px var(--tan);
+  border-radius: 30px;
 }
 
-#finalScore {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: bold;
+button {
+  border-radius: 20px;
+  border: 1px solid var(--tan);
+  background: var(--cream);
 }
 
 span {
@@ -57,6 +58,26 @@ span {
 
 p {
   font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+}
+
+.btn:focus,
+.btn:active,
+.btn:visited {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #343a40;
+  border-radius: 20px;
+}
+
+#timeLeft {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#finalScore {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
 }
 
 #questionTitle {
@@ -67,4 +88,15 @@ p {
 #answerCheck {
   font-style: italic;
   color: #4d5159;
+}
+
+#start-quiz-button {
+  background: var(--cream);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#viewScore {
+  background: var(--select);
+  color: white;
 }
